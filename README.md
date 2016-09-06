@@ -56,6 +56,8 @@ day by using the summary function.
 
     ##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
     ##       0    6778   10400    9354   12810   21190
+    
+The Median of total number of steps = 10400. The mean of total number of steps = 9354    
 
 **What is the average daily activity pattern?**  
 To find the average daily activity pattern, we will make a time series
@@ -73,7 +75,7 @@ number of steps.
           ylab = "Average Steps")
     abline(v = maxstep, lty= 3, col ="red")
 
-![](PA1_template_files/figure-markdown_strict/unnamed-chunk-4-1.png)
+![](https://github.com/ranjeetapegu/RepData_PeerAssessment1/blob/master/Timeseries_avgsteps%20vs%205min%20interval.png)
 
 **Imputing missing values**
 
@@ -105,7 +107,7 @@ new dataset and old dataset.
     names(NDaily.step) <- c("date", "steps")
     hist(NDaily.step$steps, main ="Histogram of total nos of step taken each day",xlab ="Total steps per day", ylab= "Number of times",col = "Blue")
 
-![](PA1_template_files/figure-markdown_strict/unnamed-chunk-7-1.png)
+![](https://github.com/ranjeetapegu/RepData_PeerAssessment1/blob/master/Hist_DailyTotalStep_fillinData.png)
 
 Summary of new dataset will give whether all missing have been replaced
 and also give the new mean and median of total number of steps taken in
@@ -152,7 +154,7 @@ number of steps taken, averaged across all weekday days or weekend days
     ggplot(Int_Avgstep, aes(interval, steps )) + geom_line(colour = "blue") +
            xlab("interval ") + ylab ("Avg steps") + facet_grid(facets = day ~ .)
 
-![](PA1_template_files/figure-markdown_strict/unnamed-chunk-9-1.png)
+![](https://github.com/ranjeetapegu/RepData_PeerAssessment1/blob/master/AvgSteps%20Weekday_Weekdays.png)
 
 From the above charts we conclude that the average number of steps taken
 in weekdays is significantly higher in time interval between 750 -1000,
