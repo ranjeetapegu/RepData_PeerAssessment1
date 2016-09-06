@@ -47,7 +47,7 @@ plotted.
     # Make a histogram of the total number steps taken
     hist(Daily.step$steps, main ="Histogram of total nos of step taken each day",xlab ="Total steps per day", ylab= "Fequency",col = "green")
 
-![](PA1_template_files/figure-markdown_strict/unnamed-chunk-2-1.png)
+![](https://github.com/ranjeetapegu/RepData_PeerAssessment1/blob/master/Hist_DailyTotalSteps.png)
 
 Lets find out the mean and median of the total number of steps taken per
 day by using the summary function.
