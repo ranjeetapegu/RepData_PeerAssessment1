@@ -1,6 +1,11 @@
 ---
 title: "Personal Movement Analysis using Activity Monitoring Device"
+output:
+  md_document:
+    variant: markdown_github
 ---
+
+        
 ## Introduction ##
 
 It is now possible to collect a large amount of data about personal movement using activity monitoring devices such as a Fitbit, Nike Fuelband, or Jawbone Up.In this assignment,we will try assignment to makes use of data from a personal activity monitoring device and try answering few questions. The device collects data at 5 minute intervals through out the day. The data consists of two months of data from an anonymous individual collected during the months of October and November, 2012 and include the number of steps taken in 5 minute intervals each day. 
@@ -103,4 +108,3 @@ ggplot(Int_Avgstep, aes(interval, steps )) + geom_line(colour = "blue") +
 
 
 From the above charts we conclude that the average number of steps taken in weekdays is significantly higher in time interval between 750 -1000, whereas for weekends we did not observe such high peak during the same interval period.
-
